@@ -10,7 +10,7 @@ Mandelbrot Fractal Generator is a fractal image renderer built in C. It renders 
 ## Key Features
 
 - **Dual back‑end support written in c**
-  - **Lightweight HTTP parser (Custom Socket Server)** – manually parses HTTP/1.1 requests,ideal for embedded or low‑latency use
+  - **Lightweight HTTP parser (Custom Socket Server)** – manually parses HTTP/1.1 requests made through sockets,ideal for embedded or low‑latency use
   - **Full HTTP server** using [`libmicrohttpd`](https://www.gnu.org/software/libmicrohttpd/) 
 - **Interactive Mandelbrot rendering**
   - Center‑preserving zoom
@@ -73,3 +73,18 @@ int mandelbrot(double cx, double cy)
     }
     return n;
 }
+
+```
+
+---
+
+## Usage
+- Build using:
+  - `make socket` for the *Custom Socket Server(SocketServer)* version
+  - `make mhd` for the *Full HTTP Server(MHDServer)* version
+- Run executable
+  - `./server_socket` for the *Custom Socket Server*
+  - `./server_mhd`for the *Full HTTP Server* 
+- To use a custom port
+   - `./server_mhd --port port_no_of_your_choice` for *Custom Socket Server*
+   - `./server_socket --port port_no_of_your_choice` for *Full HTTP Server*
