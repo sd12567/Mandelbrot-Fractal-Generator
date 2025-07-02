@@ -30,7 +30,7 @@ Mandelbrot Fractal Generator is a fractal image renderer built in C. It renders 
 | Backend Type   | Best For           | Difference                      |
 |----------------|--------------------|-----------------------------|
 | Custom Socket Server | Low‑latency, embedded      | sockets used,manual parsing of requests required  |
-| Full HTTP Server    | Web integration         | using the `librmicrohttpd` library   |
+| Full HTTP Server    | Web integration         | using the `libmicrohttpd` library   |
 
 ---
 
