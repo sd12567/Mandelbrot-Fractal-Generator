@@ -1,6 +1,6 @@
 #  Mandelbrot Fractal Generator
 
-An interactive Mandelbrot Fractal Generator in C with Dual Protocol Support
+An interactive Mandelbrot Fractal Generator in C with Multithreaded Image Rendering and Dual Network Backends.
 
 
 
