@@ -39,8 +39,8 @@ Mandelbrot Fractal Generator is a fractal image renderer built in C. It renders 
 - **IEEE 754 double‑precision** maths for zoom capability
 - Escape‑time algorithm with smooth colour mapping  
 - PNG encoding via **[`libpng`](http://www.libpng.org/pub/png/libpng.html)** (in‑memory write callback)  
-- Server built entirely in **C (C17)**, usage of external libraries  [`libmicrohttpd`](https://www.gnu.org/software/libmicrohttpd/) ,  [`libpng`](http://www.libpng.org/pub/png/libpng.html)
-- Lightweight frontend built with **vanilla Javascript**,**HTML**, and **CSS**
+- Server built entirely in **C (C17)** , usage of external libraries  [`libmicrohttpd`](https://www.gnu.org/software/libmicrohttpd/) ,  [`libpng`](http://www.libpng.org/pub/png/libpng.html)
+- Lightweight frontend built with **vanilla Javascript** ,**HTML** , and **CSS**
 ---
 
 
