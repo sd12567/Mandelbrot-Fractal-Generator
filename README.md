@@ -1,6 +1,6 @@
 #  Mandelbrot Fractal Server
 
-**A lightweight, extensible fractal generator with dual‑protocol back‑end**
+**A Mandelbrot Fractal Server in C with Dual Protocol Support**
 
 
 
