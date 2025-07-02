@@ -1,18 +1,18 @@
 
-MODE ?= release        
+# MODE ?= release        
 
-ifeq ($(MODE),release)
+# ifeq ($(MODE),release)
   CFLAGS := -O2 -Wall -Wextra
-endif
+# endif
 
-ifeq ($(MODE),debug)
-  CFLAGS := -O0 -g -Wall -Wextra
-endif
+# ifeq ($(MODE),debug)
+#   CFLAGS := -O0 -g -Wall -Wextra
+# endif
 
-ifeq ($(MODE),asan)
-  CFLAGS := -O1 -g -fsanitize=address,undefined -fno-omit-frame-pointer -Wall -Wextra
-  LDFLAGS := -fsanitize=address,undefined
-endif
+# ifeq ($(MODE),asan)
+#   CFLAGS := -O1 -g -fsanitize=address,undefined -fno-omit-frame-pointer -Wall -Wextra
+#   LDFLAGS := -fsanitize=address,undefined
+# endif
 
 CORE_INC := -Icore/headers
 SOCK_INC := $(CORE_INC) -ISocketServer/headers
