@@ -30,7 +30,7 @@
 | Backend Type   | Transport Protocol | Best For                     |
 |----------------|--------------------|-----------------------------|
 | Raw TCP Socket | Custom binary      | Low‑latency, embedded usage |
-| HTTP Server    | HTTP / 1.1         | Standard web integration    |
+| HTTP Server    | HTTP / 1.1         | Web integration    |
 
 ---
 
