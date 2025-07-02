@@ -1,6 +1,6 @@
 #  Mandelbrot Fractal Generator
 
-An interactive Mandelbrot Fractal Generator in C with Multithreaded Image Rendering and Dual Network Backends.
+Mandelbrot Fractal Generator is a fractal image renderer built in C. It renders Mandelbrot sets using the escape-time algorithm with multithreaded image generation. The server supports two modes: a full-featured HTTP backend using libmicrohttpd and a minimal HTTP/1.1 parser over raw TCP sockets. Users can view and zoom into fractals via a simple web frontend, with controls for coordinates and color
 
 
 
@@ -10,8 +10,8 @@ An interactive Mandelbrot Fractal Generator in C with Multithreaded Image Render
 ## Key Features
 
 - **Dual back‑end support written in c**
-  - **Raw TCP socket server** – minimalist binary protocol, ideal for embedded or low‑latency use
-  - **HTTP server with** [`libmicrohttpd`](https://www.gnu.org/software/libmicrohttpd/) 
+  - **Lightweight HTTP parser (Custom Socket Server)** – manually parses HTTP/1.1 requests,ideal for embedded or low‑latency use
+  - **Full HTTP server** using [`libmicrohttpd`](https://www.gnu.org/software/libmicrohttpd/) 
 - **Interactive Mandelbrot rendering**
   - Center‑preserving zoom
   - Adjustable coordinate ranges and RGB colouring
@@ -29,8 +29,8 @@ An interactive Mandelbrot Fractal Generator in C with Multithreaded Image Render
 
 | Backend Type   | Transport Protocol | Best For                     |
 |----------------|--------------------|-----------------------------|
-| Raw TCP Socket | Custom binary      | Low‑latency, embedded usage |
-| HTTP Server    | HTTP / 1.1         | Web integration    |
+| Custom Socket Server | Custom binary      | Low‑latency, embedded usage |
+| Full HTTP Server    | HTTP / 1.1         | Web integration    |
 
 ---
 
